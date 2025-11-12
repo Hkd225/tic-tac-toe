@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tic Tac Toe AI</h1>
+            <p class="subtitle">Game klasik dengan AI Minimax</p>
+        </header>
+
+        <div class="round-info" id="round-info">Round 1</div>
+
+        <div class="game-board" id="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+
+        <div class="game-info">
+            <div class="control-group">
+                <h2>Simbol</h2>
+                <div class="options">
+                    <div class="option selected" id="player-x">X</div>
+                    <div class="option" id="player-o">O</div>
+                </div>
+            </div>
+            
+            <div class="control-group">
+                <h2>Kesulitan</h2>
+                <div class="options">
+                    <div class="option selected" data-difficulty="easy">Mudah</div>
+                    <div class="option" data-difficulty="medium">Sedang</div>
+                    <div class="option" data-difficulty="hard">Sulit</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="status-message" id="status">Pilih simbol dan mulai!</div>
+
+        <div class="stats">
+            <div class="stat">
+                <div>Menang</div>
+                <div class="stat-value win" id="wins">0</div>
+            </div>
+            <div class="stat">
+                <div>Kalah</div>
+                <div class="stat-value loss" id="losses">0</div>
+            </div>
+            <div class="stat">
+                <div>Seri</div>
+                <div class="stat-value draw" id="draws">0</div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="new-game">Game Baru</button>
+            <button id="reset-stats">Reset</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
